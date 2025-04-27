@@ -1,21 +1,133 @@
+/* 
+"Верстка адаптивна, окрім мобільних пристроїв. Точки перелому:
+- mobile: верстка гумова від 320px, стає адаптивною з 360px;
+- tablet: з 768px;
+- desktop: з 1280px "
+*/
+
+/* body {
+    background-color: var(--white);
+    transition: background-color 0.3s ease;
+} */
+
+/* body.dark-theme {
+    --white: #1E2023;
+    --black: #F0F0F0;
+    --accet-green: #14C57C;
+    --light-grey: #3B3F45;
+    --hover-grey: #5A5D63;
+    --light-accet: #204136;
+} */
+
+/* --------------- Container --------------- */
+.footer-container {
+    border-top: 1px solid var(--light-grey);
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767.98px) {
+    .footer-container {
+        padding: 40px 20px 24px 20px;
+    }
+}
+
+.footer-social-container {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-social-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        max-width: 768px;
+        padding: 40px 32px 24px 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-container {
+        max-width: 1280px;
+    }
+}
+
+/* --------------- General --------------- */
+
 .footer {
-  padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
 }
-.footer-desc {
-  text-align: center;
+
+/* --------------- Logo --------------- */
+
+
+.footer-logo {
+    font-family: "Impact", sans-serif;
+    display: block;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-bottom: 32px;
 }
-.footer-link {
-  position: relative;
+
+@media screen and (min-width: 1280px) {
+    .footer-logo {
+        padding-bottom: 0;
+    }
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+.footer-logo-accent {
+    color: var(--accet-green);
+}
+
+/* --------------- Social --------------- */
+
+.footer-social-list {
+    display: flex;
+}
+
+@media screen and (max-width: 767.98px) {
+    .footer-social-list {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-social-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+.footer-social-item:hover {
+    color: var(--accet-green);
+}
+
+/* --------------- Copyright --------------- */
+
+.footer-copyright {
+    max-width: 197px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-copyright {
+        max-width: 351px;
+        margin-right: 0;
+    }
 }
