@@ -1,0 +1,190 @@
+
+.work-together {
+    font-family: 'Poppins';
+    color: var(--black);
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+/* --------------- Container --------------- */
+.work-together-container {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767.98px) {
+    .work-together-container {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .work-together-container {
+        max-width: 768px;
+        padding: 62px 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .work-together-container {
+        max-width: 1280px;
+        padding: 82px 32px;
+    }
+}
+
+/* --------------- Title --------------- */
+
+.work-together-title {
+    font-family: "Impact", sans-serif;
+    line-height: 1.23;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 767.98px) {
+    .work-together-title {
+        font-size: 52px;
+        line-height: 1.23;
+        width: 253px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .work-together-title {
+        font-size: 108px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .work-together-title {
+        /* font-size: 108px;
+        line-height: 1.14;
+        letter-spacing: 0.02em; */
+        margin-bottom: 80px;
+        width: 513px;
+    }
+}
+
+.work-together-title-accent {
+    color: var(--accet-green);
+}
+
+/* --------------- Contacts --------------- */
+
+@media screen and (min-width: 1280px) {
+    .work-together-flex-cont {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.work-together-text {
+    font-size: 18px;
+    line-height: 1.55;
+    text-transform: uppercase;
+    max-width: 320px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .work-together-text {
+        font-size: 20px;
+        line-height: 1.6;
+        max-width: 488px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .work-together-text {
+        margin-bottom: 120px;
+    }
+    .work-together-contacts {
+        width: 488px;
+    }
+}
+
+.work-together-contacts-list {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .work-together-contacts-list {
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .work-together-contacts-list {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}
+
+.work-together-contacts-item:hover {
+    color: var(--accet-green);
+}
+
+/* --------------- Form --------------- */
+
+.form-input-email {
+    padding: 12px 16px;
+    height: 48px;
+}
+
+.form-message {
+    resize: none;
+    padding: 16px;
+    height: 128px;
+}
+
+.form-input-email, .form-message {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    background: var(--light-grey);
+    margin-bottom: 32px;
+}
+
+.form-input-email::placeholder, .form-message::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--black);
+}
+
+.work-together-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    width: 100%;
+    background-color: var(--accet-green);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    .work-together-btn {
+        width: 173px;
+    }
+}
+
+.work-together-btn:hover {
+    background-color: var(--hover);
+}
