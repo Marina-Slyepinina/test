@@ -4,10 +4,10 @@ import "izitoast/dist/css/iziToast.min.css";
 
 
 function post(userEmail, userText) {
-    return axios.post('https://portfolio-js.b.goit.study/api/requests', {
-  "email": userEmail,
-  "comment": userText
-})
+  return axios.post('https://portfolio-js.b.goit.study/api/requests', {
+    "email": userEmail,
+    "comment": userText
+  })
 }
 
 const form = document.querySelector(".work-together-form");
@@ -37,10 +37,8 @@ async function handleSubmit(event) {
         if (response.status === 201) {
             form.reset();
             openModal(response.data.title, response.data.message);
-            emailInput.classList.remove("valid"); /* ************************** */
         }
     } catch (error) {
-        console.log(error.message);
         showErrorMessange();
     }
 }
@@ -76,8 +74,8 @@ function closeModal() {
 
 function closeBackdrop(event) {
     if (event.target.classList.contains("backdrop")) {
-    closeModal();
-  }
+      closeModal();
+    }
 }
 
 function closeEsc(event) {
